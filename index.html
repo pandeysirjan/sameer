@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Identification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Country Identification</h1>
+
+    <div class="select-container">
+      <label for="continents">Select Continent:</label>
+      <select id="continents" onchange="filterCountries()">
+        <option value="all">Select Continent</option>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="Oceania">Oceania</option>
+        <option value="South America">South America</option>
+      </select>
+    </div>
+
+    <ul id="countryList" class="country-list">
+      <!-- Country list will be populated dynamically -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
